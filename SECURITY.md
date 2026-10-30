@@ -8,7 +8,8 @@ Please **do not open a public issue** for security problems. Use GitHub's privat
 
 | Version | Supported |
 |---|---|
-| 3.2.x | ✅ |
+| 3.2.1 | ✅ |
+| 3.2.0 | ⚠️ Update to 3.2.1 |
 | Earlier (Transti, Saffro, Mayur builds) | ❌ Update to the latest release |
 
 ## How Ocello protects transfers

@@ -2,6 +2,14 @@
 
 All notable changes to Ocello. Versions follow [semantic versioning](https://semver.org).
 
+## [3.2.1] – 2026-10-31
+
+### Fixed
+- Incoming transfers were invisible while Ocello was in the background: the approval prompt only existed inside the app, so requests timed out unseen. A notification now shows who is sending, the size and the verification code, with Accept and Decline buttons that work without opening the app.
+- Android could freeze Ocello in the background, so other devices sometimes could not reach it. New setting **Stay reachable in the background** (on by default) keeps a quiet notification so requests always arrive.
+- Discovery waits longer for encrypted replies, so devices on slower Wi-Fi are found reliably.
+- A dropped connection can no longer stop one of the encryption workers.
+
 ## [3.2.0] – 2026-10-31
 
 First public release.
@@ -32,4 +40,5 @@ First public release.
 - New name (Ocello), logo and peacock-blue design.
 - Odd file names are cleaned up instead of failing the transfer.
 
+[3.2.1]: ../../releases/tag/v3.2.1
 [3.2.0]: ../../releases/tag/v3.2.0
