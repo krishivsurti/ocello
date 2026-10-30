@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an idea for Ocello
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the situation and what is missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you imagine it working.
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Platforms
+      options:
+        - label: Android
+        - label: Windows

@@ -1,0 +1,55 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. For security problems, use **Security → Report a vulnerability** instead of an issue.
+  - type: input
+    id: version
+    attributes:
+      label: Ocello version
+      description: Shown at the bottom of Settings.
+      placeholder: "3.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: direction
+    attributes:
+      label: Transfer direction
+      options:
+        - Windows → Android
+        - Android → Windows
+        - Windows → Windows
+        - Android → Android
+        - Not a transfer problem
+    validations:
+      required: true
+  - type: input
+    id: devices
+    attributes:
+      label: Devices
+      description: Phone model and Android version, Windows version.
+      placeholder: "Pixel 8, Android 15 / Windows 11 24H2"
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      options:
+        - Phone hotspot (5 GHz)
+        - Phone hotspot (2.4 GHz)
+        - Home or office Wi-Fi
+        - Other / not sure
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. Include any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional. Please hide anything private.
